@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-import 'package:flutter_redux_boilerplate/styles/colors.dart';
+import 'package:iSave/styles/colors.dart';
 
 final ThemeData kIOSTheme = new ThemeData(
   primarySwatch: colorStyles['primary'],
@@ -62,9 +62,11 @@ class PlatformAdaptiveButton extends StatelessWidget {
         onPressed: onPressed,
       );
     } else {
-      return new IconButton(
-        icon: icon,
+      return new RaisedButton(
+        child: child,
         onPressed: onPressed,
+        color: colorStyles['primary'],
+        textColor: Colors.white
       );
     }
   }

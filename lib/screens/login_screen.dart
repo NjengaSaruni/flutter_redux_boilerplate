@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_redux_boilerplate/containers/login_form.dart';
-import 'package:flutter_redux_boilerplate/styles/colors.dart';
+import 'package:iSave/containers/login_form.dart';
+import 'package:iSave/styles/colors.dart';
 
 class LoginScreen extends StatelessWidget {
     LoginScreen({Key key}) : super(key: key);

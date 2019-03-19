@@ -3,13 +3,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux_persist_flutter/redux_persist_flutter.dart';
 
-import 'package:flutter_redux_boilerplate/presentation/platform_adaptive.dart';
-import 'package:flutter_redux_boilerplate/screens/loading_screen.dart';
-import 'package:flutter_redux_boilerplate/screens/login_screen.dart';
-import 'package:flutter_redux_boilerplate/screens/main_screen.dart';
-import 'package:flutter_redux_boilerplate/store/store.dart';
-import 'package:flutter_redux_boilerplate/middleware/middleware.dart';
-import 'package:flutter_redux_boilerplate/models/app_state.dart';
+import 'package:iSave/presentation/platform_adaptive.dart';
+import 'package:iSave/screens/loading_screen.dart';
+import 'package:iSave/screens/login_screen.dart';
+import 'package:iSave/screens/main_screen.dart';
+import 'package:iSave/store/store.dart';
+import 'package:iSave/middleware/middleware.dart';
+import 'package:iSave/models/app_state.dart';
 
 void main() => runApp(new ReduxApp());
 
@@ -26,7 +26,7 @@ class ReduxApp extends StatelessWidget {
             builder: (context) => new StoreProvider<AppState>(
                 store: store,
                 child: new MaterialApp(
-                    title: 'ReduxApp',
+                    title: 'iSave',
                     theme: defaultTargetPlatform == TargetPlatform.iOS
                         ? kIOSTheme
                         : kDefaultTheme,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_redux_boilerplate/styles/colors.dart';
+import 'package:iSave/styles/colors.dart';
 
 class LoadingScreen extends StatelessWidget {
     

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_redux_boilerplate/presentation/platform_adaptive.dart';
-import 'package:flutter_redux_boilerplate/styles/texts.dart';
-import 'package:flutter_redux_boilerplate/screens/main_tabs/news_tab.dart';
-import 'package:flutter_redux_boilerplate/screens/main_tabs/stats_tab.dart';
-import 'package:flutter_redux_boilerplate/screens/main_tabs/discover_tab.dart';
-import 'package:flutter_redux_boilerplate/screens/main_drawer.dart';
+import 'package:iSave/presentation/platform_adaptive.dart';
+import 'package:iSave/styles/texts.dart';
+import 'package:iSave/screens/main_tabs/news_tab.dart';
+import 'package:iSave/screens/main_tabs/stats_tab.dart';
+import 'package:iSave/screens/main_tabs/discover_tab.dart';
+import 'package:iSave/screens/main_drawer.dart';
 
 
 class MainScreen extends StatefulWidget {
@@ -58,6 +58,7 @@ class MainScreenState extends State<MainScreen> {
                 children: <Widget>[
                     new NewsTab(),
                     new StatsTab(),
+                    new StatsTab(),
                     new DiscoverTab()
                 ],
             ),
@@ -90,5 +91,9 @@ class TabItem {
 const List<TabItem> TabItems = const <TabItem>[
     const TabItem(title: 'News', icon: Icons.assignment),
     const TabItem(title: 'Statistics', icon: Icons.timeline),
-    const TabItem(title: 'Discover', icon: Icons.group_work)
+    const TabItem(title: 'Discover', icon: Icons.group_work),
+    const TabItem(title: 'Discover', icon: Icons.group_work),
+    const TabItem(title: 'Discover', icon: Icons.group_work),
+    const TabItem(title: 'Discover', icon: Icons.group_work),
+    const TabItem(title: 'Others', icon: Icons.dashboard)
 ];

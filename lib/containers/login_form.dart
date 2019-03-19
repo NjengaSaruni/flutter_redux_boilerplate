@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 
-import 'package:flutter_redux_boilerplate/presentation/platform_adaptive.dart';
-import 'package:flutter_redux_boilerplate/models/app_state.dart';
-import 'package:flutter_redux_boilerplate/actions/auth_actions.dart';
+import 'package:iSave/presentation/platform_adaptive.dart';
+import 'package:iSave/models/app_state.dart';
+import 'package:iSave/actions/auth_actions.dart';
 
 class LoginForm extends StatefulWidget {
     @override

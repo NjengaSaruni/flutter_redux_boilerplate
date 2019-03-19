@@ -1,8 +1,11 @@
 class User {
-    final String token;
-    final String id;
+    final String _token;
+    final String _id;
 
-    User(this.token, this.id);
+    User(this._token, this._id);
+
+    String get token => this._token;
+    String get id => this._id;
 
     Map<String, dynamic> toJSON() => <String, dynamic>{
         'token': this.token,
@@ -17,5 +20,14 @@ class User {
     @override
     String toString() {
         return '{token: $token, id: $id}';
+    }
+
+
+    Map<String, dynamic> toMap() {
+        var map = new Map<String, dynamic>();
+        map["token"] = _token;
+        map["id"] = _id;
+
+        return map;
     }
 }

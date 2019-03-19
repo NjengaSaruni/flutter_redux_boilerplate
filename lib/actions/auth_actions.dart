@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:redux/redux.dart';
 
-import 'package:flutter_redux_boilerplate/models/user.dart';
-import 'package:flutter_redux_boilerplate/models/app_state.dart';
+import 'package:iSave/models/user.dart';
+import 'package:iSave/models/app_state.dart';
 
 class UserLoginRequest {}
 
